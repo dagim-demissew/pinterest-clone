@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { ReactComponent as PinterestLogo } from "../../assets/pinterest-svgrepo-com.svg";
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import TextsmsIcon from "@mui/icons-material/Textsms";
@@ -11,10 +11,13 @@ const Navbar = () => {
     <div className="navbar-container">
       <div className="navbar-items">
         <div className="logo-container">
-          <Link className="logo">P</Link>
+          <div className="logo">
+            <PinterestLogo />
+          </div>
         </div>
         <div className="option inverted">
-          <span>Home</span>
+          <span>Home
+          </span>
         </div>
         <div className="option">Create</div>
         <div className="search-box">

@@ -225,7 +225,59 @@ const DATA_ITEMS = [
     userName: "Tina Morgan",
     userImage: "https://i.pravatar.cc/100?img=20",
   },
-  
 ];
 
-export default DATA_ITEMS;
+const SEARCH_DATA = [
+  {
+    detail: "A beautiful sunset ",
+    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+  },
+  {
+    detail: "A serene beach",
+    image: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
+  },
+  {
+    detail: "A lush green forest ",
+    image: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29",
+  },
+  {
+    detail: "A lush green forest ",
+    image: "https://images.unsplash.com/photo-1495195134817-aeb325a55b65",
+  },
+];
+const POPULAR = [
+  {
+    detail: "A beautiful sunset",
+    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+  },
+  {
+    detail: "A serene beach.",
+    image: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
+  },
+  {
+    detail: "A lush green forest",
+    image: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29",
+  },
+  {
+    detail: "A  forest during autumn.",
+    image: "https://images.unsplash.com/photo-1495195134817-aeb325a55b65",
+  },
+  {
+    detail: "A beautiful sunset ",
+    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+  },
+  {
+    detail: "A serene beach ",
+    image: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
+  },
+  {
+    detail: "A lush green forest ",
+    image: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29",
+  },
+  {
+    detail: "A lush green forest ",
+    image: "https://images.unsplash.com/photo-1495195134817-aeb325a55b65",
+  },
+];
+
+export { DATA_ITEMS, SEARCH_DATA, POPULAR };

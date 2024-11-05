@@ -1,12 +1,17 @@
 import React from "react";
 import Card from "../../components/Card/Card";
-import DATA_ITEMS from "../../util/data";
+import Question from "../../components/Question/Question";
+import { DATA_ITEMS } from "../../util/data";
+import Lowbar from "../../components/Lowbar/Lowbar";
+import SearchOverlay from "../../components/Search-Overlay/SearchOverlay";
 import { randomGenerator } from "../../util/random";
 import "./homePage.css";
 
 const HomePage = () => {
   return (
     <div className="layout">
+     
+      <Question />
       {DATA_ITEMS.map((data) => (
         <Card
           key={data.id}

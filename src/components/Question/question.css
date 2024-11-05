@@ -1,0 +1,31 @@
+.question-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    color: black;
+    background: #ffffff;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+.logo-icon {
+  color: black;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+@media (max-width: 745px) {
+  .question-logo {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+   
+  }
+}

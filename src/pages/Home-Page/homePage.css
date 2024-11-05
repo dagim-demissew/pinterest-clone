@@ -3,9 +3,32 @@
   width: 100%;
   min-height: 100vh;
   margin: 0;
-  padding: 5px;
+  padding: 0px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(236px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(236px, 4fr));
   grid-auto-rows: 10px;
-  grid-gap: 16px;
+  grid-gap: 9px;
+}
+
+@media (max-width: 766px)  {
+  .layout {
+    grid-template-columns: repeat(auto-fill, minmax(196px, 6fr));
+    grid-gap: 10px;
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 527px)and (min-width: 527px) {
+  .layout {
+    grid-template-columns: repeat(auto-fill, minmax(126px, 6fr));
+    grid-gap: 10px;
+  }
+}
+@media (max-width: 396px) {
+  .layout {
+    grid-template-columns: repeat(auto-fill, minmax(126px, 6fr));
+    grid-gap: 10px;
+  }
 }
