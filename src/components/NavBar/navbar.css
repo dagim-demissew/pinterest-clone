@@ -55,6 +55,7 @@
   display: flex;
   align-items: center;
   padding-left: 15px;
+  cursor: pointer;
 }
 
 .search-input {
@@ -117,6 +118,15 @@
   top: 7px;
   right: 7px;
 }
+.icon-search {
+  padding: 1px;
+  margin-right:5px ;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
 
 .username-container {
   width: 25px;
@@ -142,10 +152,10 @@
 }
 
 @media (max-width: 745px) {
-  .option  {
+  .option {
     display: none;
   }
-  .navbar-icon-container{
+  .navbar-icon-container {
     display: none;
   }
 }

@@ -1,16 +1,19 @@
-import React from "react";
+import { React, useState } from "react";
+import { DATA_ITEMS } from "../../util/data";
+import { useSelector } from "react-redux";
+import { randomGenerator } from "../../util/random";
 import Card from "../../components/Card/Card";
 import Question from "../../components/Question/Question";
-import { DATA_ITEMS } from "../../util/data";
-import Lowbar from "../../components/Lowbar/Lowbar";
+import ProfileSection from "../../components/Profile-Section/ProfileSection";
 import SearchOverlay from "../../components/Search-Overlay/SearchOverlay";
-import { randomGenerator } from "../../util/random";
 import "./homePage.css";
 
 const HomePage = () => {
+  const display = useSelector((state) => state.search.displaySearch);
+
   return (
     <div className="layout">
-     
+      {display ? <SearchOverlay /> : <></>}
       <Question />
       {DATA_ITEMS.map((data) => (
         <Card
